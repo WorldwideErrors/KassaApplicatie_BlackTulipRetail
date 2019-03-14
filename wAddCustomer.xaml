@@ -1,0 +1,35 @@
+﻿<Window x:Class="KassaApplicatie.wAddCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KassaApplicatie"
+        mc:Ignorable="d"
+        Title="Black Tulip Retail" Height="826.86" Width="911.2" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="tulip_icon-icons.com_55450.png">
+    <Grid>
+        <DataGrid x:Name="dgCustomers" Margin="143,10,0,22.6" Background="#FFDCB9FF" BorderBrush="Black" HorizontalAlignment="Left" Width="542"/>
+        <TextBox x:Name="txtVoornaam" HorizontalAlignment="Left" Height="18" Margin="690,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="txtAchternaam" HorizontalAlignment="Left" Height="18" Margin="690,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <Label Content="Voornaam:" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Height="26" Width="80"/>
+        <TextBox x:Name="txtWoonplaats" HorizontalAlignment="Left" Height="18" Margin="690,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <Label Content="Achternaam:" HorizontalAlignment="Left" Margin="690,54,0,0" VerticalAlignment="Top" Width="80" Height="25"/>
+        <Label Content="Woonplaats:" HorizontalAlignment="Left" Margin="690,97,0,0" VerticalAlignment="Top" Height="26" Width="80"/>
+        <TextBox x:Name="txtTelefoon" HorizontalAlignment="Left" Height="20" Margin="690,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <Label Content="Telefoon:" HorizontalAlignment="Left" Margin="690,141,0,0" VerticalAlignment="Top" Height="26" Width="80"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="19" Margin="690,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="690,187,0,0" VerticalAlignment="Top" Height="26" Width="80"/>
+        <Button x:Name="btnOpslaan" Content="Opslaan" HorizontalAlignment="Left" Margin="690,297,0,0" VerticalAlignment="Top" Width="205" Click="btnOpslaan_Click" BorderBrush="Black" Background="#FFC061FF"/>
+        <Button x:Name="btnMainWindow" Content="Back" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Width="54" Height="26" Click="btnMainWindow_Click" BorderBrush="Black"/>
+        <Button x:Name="btnMainWindow_Copy" Content="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="128" Height="32" Click="btnMainWindow_Click" BorderBrush="Black" Background="#FFC061FF"/>
+        <ComboBox x:Name="cbWijzigKlant" HorizontalAlignment="Left" Margin="690,245,0,0" VerticalAlignment="Top" Width="205">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFC061FF" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <Button Content="Wijzigen" HorizontalAlignment="Left" Margin="690,273,0,0" VerticalAlignment="Top" Width="99" Click="Button_Click" Background="#FFC061FF" BorderBrush="Black"/>
+        <Button x:Name="btnDeleteCustomer" Content="Verwijderen" HorizontalAlignment="Left" Margin="796,273,0,0" VerticalAlignment="Top" Width="99" Click="btnDeleteCustomer_Click" Background="#FFC061FF" BorderBrush="Black"/>
+    </Grid>
+</Window>
